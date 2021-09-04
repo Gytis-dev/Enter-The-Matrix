@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  background: #000;
+}
+
+.stailas {
+  background: #0f180f;
+  height: 150px;
+  padding: 20px;
+  min-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 30px;
+  color: whitesmoke;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.good {
+  color: #6f0;
+}
+
+.block {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  bottom: 5%;
+  padding: 10px;
+  background: #6f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blocknot {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  bottom: 5%;
+  padding: 10px;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+p {
+  color: #6f0;
+  font-size: 14px;
+  padding: 5px;
+  position: relative;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(10, 16, 10, 0.5)));
+  background: linear-gradient(transparent 0, rgba(10, 16, 10, 0.5) 50%);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(10, 16, 10, 0.5)));
+  background: linear-gradient(transparent 0, rgba(10, 16, 10, 0.5) 50%);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+p:hover {
+  cursor: text;
+}
+
+p::-moz-selection {
+  background: #b3d4fc;
+}
+
+p::selection {
+  background: #b3d4fc;
+}
+/*# sourceMappingURL=style.css.map */
