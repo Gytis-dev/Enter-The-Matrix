@@ -29,11 +29,11 @@ const handleBlockDisplay = () => {
       isTyping = !isTyping;
 
       if (isTyping) {
-        div.classList.remove("blocknot");
-        div.classList.add("block");
+        div.classList.remove("setColorNone");
+        div.classList.add("setColorGreen");
       } else {
-        div.classList.remove("block");
-        div.classList.add("blocknot");
+        div.classList.remove("setColorGreen");
+        div.classList.add("setColorNone");
       }
       handleBlockDisplay();
     }, 600);
@@ -49,7 +49,7 @@ const handleTextChange = () => {
       } else {
         if (currentLetter < result.length) {
           elements[currentLetter].innerHTML = screeningLetters[counter];
-          elements[currentLetter].classList.add("good");
+          elements[currentLetter].classList.add("introLetters");
           counter = 0;
           currentLetter++;
         }

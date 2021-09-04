@@ -11,7 +11,7 @@ body {
   background: #000;
 }
 
-.stailas {
+.parentDivStyle {
   background: #0f180f;
   height: 150px;
   padding: 20px;
@@ -28,16 +28,16 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   font-size: 30px;
-  color: whitesmoke;
+  color: #c2c2c2;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.good {
+.introLetters {
   color: #6f0;
 }
 
-.block {
+.setColorGreen {
   position: absolute;
   left: 20px;
   top: 60%;
@@ -48,7 +48,7 @@ body {
   transition: 0.5s;
 }
 
-.blocknot {
+.setColorNone {
   position: absolute;
   left: 20px;
   top: 60%;
@@ -79,7 +79,7 @@ p:after {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, rgba(10, 16, 10, 0.5)));
   background: linear-gradient(transparent 0, rgba(10, 16, 10, 0.5) 50%);
   opacity: 0.4;
-  z-index: -1;
+  z-index: 1;
 }
 
 p:before {

@@ -6,22 +6,20 @@ const p = document.createElement("p");
 
 let counter = 0;
 const textLength = text.length;
+let time = null;
 
 export const showText = () => {
-  let time = null;
-
   const call = () => {
     if (counter < textLength) {
       time = setTimeout(() => {
         p.innerHTML += text[counter];
         counter++;
-        body.appendChild(p);
 
         call();
       }, 50);
     } else {
+      clearTimeout(time);
       setTimeout(() => {
-        clearTimeout(time);
         p.remove();
         test();
       }, 2000);
@@ -29,3 +27,5 @@ export const showText = () => {
   };
   call();
 };
+
+body.appendChild(p);

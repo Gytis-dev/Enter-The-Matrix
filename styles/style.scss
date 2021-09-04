@@ -7,12 +7,10 @@
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
 }
-
 body {
   background: $background;
 }
-
-.stailas {
+.parentDivStyle {
   background: #0f180f;
   height: 150px;
   padding: 20px;
@@ -24,15 +22,13 @@ body {
   display: flex;
   justify-content: start;
   font-size: 30px;
-
-  color: whitesmoke;
+  color: rgb(194, 194, 194);
   transition: 1s;
 }
-.good {
+.introLetters {
   color: #6f0;
 }
-
-.block {
+.setColorGreen {
   position: absolute;
   left: 20px;
   top: 60%;
@@ -41,7 +37,7 @@ body {
   background: #6f0;
   transition: 0.5s;
 }
-.blocknot {
+.setColorNone {
   position: absolute;
   left: 20px;
   top: 60%;
@@ -57,7 +53,6 @@ p {
   position: relative;
   z-index: -1;
   transition: 0.5s;
-
   &:after {
     content: "";
     position: absolute;
@@ -67,7 +62,7 @@ p {
     top: 0;
     background: linear-gradient(transparent 0, rgba(10, 16, 10, 0.5) 50%);
     opacity: 0.4;
-    z-index: -1;
+    z-index: 1;
   }
   &:before {
     content: "";
